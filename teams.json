@@ -8,5 +8,10 @@
       "firstName": "Nicolae", 
       "lastName": "Matei", 
       "gitHub": "nmatei" 
+    }, 
+    { 
+      "firstName": "Ion", 
+      "lastName": "Popescu", 
+      "gitHub": "pion" 
     }  
 ] 

@@ -4,10 +4,7 @@ function insertPersons (persons) {
 }
 
 function getPersonsHtml (persons) {
-    var htmlElemenst = persons.map(function(person) {
-        return getPersonHtml(person);
-    });
-    return htmlElemenst.join("");
+    return persons.map(getPersonHtml).join("");
 }
 
 function getPersonHtml (person) {
@@ -16,7 +13,7 @@ function getPersonHtml (person) {
         <td>${person.firstName}</td>
         <td>${person.lastName}</td>
         <td><a target="_blank" href="https://github.com/${person.gitHub}">gitHub</a></td>
-    </tr>`
+    </tr>`; 
 }
 
 fetch('teams.json')
