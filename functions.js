@@ -4,7 +4,10 @@ function insertPersons (persons) {
 }
 
 function getPersonsHtml (persons) {
-    return getPersonHtml(persons[0]) + getPersonHtml(persons[1]);
+    var htmlElemenst = persons.map(function(person) {
+        return getPersonHtml(person);
+    });
+    return htmlElemenst.join("");
 }
 
 function getPersonHtml (person) {
